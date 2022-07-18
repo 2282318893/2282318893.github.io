@@ -89,6 +89,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://2282318893.github.io/tags/review/</loc>
+    <lastmod>2022-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
 </urlset>
