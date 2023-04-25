@@ -76,22 +76,22 @@
 
   <url>
     <loc>https://2282318893.github.io/</loc>
-    <lastmod>2023-04-23</lastmod>
+    <lastmod>2023-04-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://2282318893.github.io/tags/first-time/</loc>
-    <lastmod>2023-04-23</lastmod>
+    <loc>https://2282318893.github.io/tags/review/</loc>
+    <lastmod>2023-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://2282318893.github.io/tags/review/</loc>
-    <lastmod>2023-04-23</lastmod>
+    <loc>https://2282318893.github.io/tags/first-time/</loc>
+    <lastmod>2023-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
