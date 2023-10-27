@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://2282318893.github.io/2022/07/17/javaweb/</loc>
+    <loc>https://2282318893.github.io/2022/07/17/java_algorithm_notebook/</loc>
     
-    <lastmod>2023-10-17</lastmod>
+    <lastmod>2023-10-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://2282318893.github.io/2022/07/17/java_algorithm_notebook/</loc>
+    <loc>https://2282318893.github.io/2022/07/17/javaweb/</loc>
     
-    <lastmod>2023-10-17</lastmod>
+    <lastmod>2023-10-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -94,7 +94,7 @@
 
   <url>
     <loc>https://2282318893.github.io/</loc>
-    <lastmod>2023-10-17</lastmod>
+    <lastmod>2023-10-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -102,14 +102,14 @@
   
   <url>
     <loc>https://2282318893.github.io/tags/review/</loc>
-    <lastmod>2023-10-17</lastmod>
+    <lastmod>2023-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://2282318893.github.io/tags/first-time/</loc>
-    <lastmod>2023-10-17</lastmod>
+    <lastmod>2023-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
