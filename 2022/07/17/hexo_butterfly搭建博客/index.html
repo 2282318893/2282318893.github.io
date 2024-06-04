@@ -1,0 +1,232 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>hexo_butterfly搭建博客 | dumb fox</title><meta name="keywords" content="review"><meta name="author" content="Patrick Star"><meta name="copyright" content="Patrick Star"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="简单回顾一下blog制作流程（电脑版本为windows11） 配置blog基本框架参考教程CSDN https:&#x2F;&#x2F;blog.csdn.net&#x2F;sinat_37781304&#x2F;article&#x2F;details&#x2F;82729029 静态框架 hexo作用:方便生成静态网页托管在github与coding上搭建步骤:1.安装git(分布式控制管理系统)，多用于处理项目版本管理，git bash 用处相当于c">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo_butterfly搭建博客">
+<meta property="og:url" content="https://2282318893.github.io/2022/07/17/hexo_butterfly%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:site_name" content="dumb fox">
+<meta property="og:description" content="简单回顾一下blog制作流程（电脑版本为windows11） 配置blog基本框架参考教程CSDN https:&#x2F;&#x2F;blog.csdn.net&#x2F;sinat_37781304&#x2F;article&#x2F;details&#x2F;82729029 静态框架 hexo作用:方便生成静态网页托管在github与coding上搭建步骤:1.安装git(分布式控制管理系统)，多用于处理项目版本管理，git bash 用处相当于c">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s2.loli.net/2023/04/23/UHRAGpk6omuDc93.jpg">
+<meta property="article:published_time" content="2022-07-17T05:34:01.000Z">
+<meta property="article:modified_time" content="2024-06-04T02:13:12.635Z">
+<meta property="article:author" content="Patrick Star">
+<meta property="article:tag" content="review">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2023/04/23/UHRAGpk6omuDc93.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://2282318893.github.io/2022/07/17/hexo_butterfly%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'hexo_butterfly搭建博客',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: true,
+  postUpdate: '2024-06-04 10:13:12'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="dumb fox" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2023/04/23/UHRAGpk6omuDc93.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/%E9%9F%B3%E4%B9%90"><i class="fa-fw /music/"></i><span> 0</span></a></li><li><a class="site-page child" href="/%E7%94%B5%E5%BD%B1"><i class="fa-fw /movies/"></i><span> 1</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2023/04/23/UHRAGpk6omuDc93.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">dumb fox</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-list"></i><span> 菜单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/%E9%9F%B3%E4%B9%90"><i class="fa-fw /music/"></i><span> 0</span></a></li><li><a class="site-page child" href="/%E7%94%B5%E5%BD%B1"><i class="fa-fw /movies/"></i><span> 1</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">hexo_butterfly搭建博客</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-07-17T05:34:01.000Z" title="Created 2022-07-17 13:34:01">2022-07-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-06-04T02:13:12.635Z" title="Updated 2024-06-04 10:13:12">2024-06-04</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span id="" data-flag-title="hexo_butterfly搭建博客"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="twikoo_visitors"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="简单回顾一下blog制作流程（电脑版本为windows11）"><a href="#简单回顾一下blog制作流程（电脑版本为windows11）" class="headerlink" title="简单回顾一下blog制作流程（电脑版本为windows11）"></a>简单回顾一下blog制作流程（电脑版本为windows11）</h1><hr>
+<h2 id="配置blog基本框架"><a href="#配置blog基本框架" class="headerlink" title="配置blog基本框架"></a>配置blog基本框架</h2><p><strong>参考教程CSDN <a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_37781304/article/details/82729029">https://blog.csdn.net/sinat_37781304/article/details/82729029</a></strong></p>
+<h3 id="静态框架-hexo"><a href="#静态框架-hexo" class="headerlink" title="静态框架 hexo"></a>静态框架 hexo</h3><p><strong>作用:<br>方便生成静态网页托管在github与coding上<br><br>搭建步骤:<br>1.安装git(分布式控制管理系统)，多用于处理项目版本管理，git bash 用处相当于cmd<br>2.安装nodejs(hexo基于nodeJS编写)，包括nodeJS，npm工具<br>3.安装hexo，注意：创建好的blog folder在hexo init myblog时，新建的myblog的指向blog folder的路径已经确定，所以一般不要随意改动blog的路径和文件夹名。<br><br>完成以上操作在本地就搭建好基本的blog框架。</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">几点提醒：</span><br><span class="line">1.git nodejs hexo安装时尽量去找相关教程。</span><br><span class="line">2.参考教程每一步提供了检验方法。</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="github部署"><a href="#github部署" class="headerlink" title="github部署"></a>github部署</h3><p><strong>1.创建账号，拥有个人仓库<br>2.SSH，上传公共密钥到github，当公共密钥与私人密钥匹配时，即可通过git上传文件到github<br>3.将hexo部署到github，即：将config.yml里的deploy里的repo指向你的github账户仓库。</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo clean（清除你之前生成的东西，也可以不加）</span><br><span class="line">hexo generate（生成静态文章）（hexo g）</span><br><span class="line">hexo deploy（部署文章）(hexo d)</span><br><span class="line">补充 hexo server（hexo s）</span><br><span class="line">多用于在你更改网页配置，界面，写文章时在本地可以直接查看修改之后的情况，达到预期后才上传</span><br><span class="line">！！！注：blog相关配置改变后上传有一定的时间延迟</span><br><span class="line">！！！注二：以上操作均在myblog文件夹里完成 在git bash 中要<span class="built_in">cd</span> myblog 包括后面的npm也如此</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="hexo的基本配置"><a href="#hexo的基本配置" class="headerlink" title="hexo的基本配置"></a>hexo的基本配置</h2><p><strong>重点提一下更换主题(原教程个人感觉和我遇到的情况存在差异，这里仅供参考)：（我用的是butterfly）<a href="https://2282318893.github.io/link/">dumb fox</a><br>1.在<a target="_blank" rel="noopener" href="https://hexo.io/themes/">这里</a>下载喜欢的主题（找到它的github链接点击code下载zip即可）<br>2.解压后放在myblog的theme文件夹下<br>3.打开解压后的文件夹找到里面的_config.yml文件复制一份并改名为_config.文件夹名.yml放到与theme同级文件夹（即与外面的_config.yml放在一起）<br>4.在git bash 中安装pug依赖和渲染插件依赖<br>cd myblog(！！！安装在myblog文件夹里)（后面的npm也基本都是 就不一一提及了）<br>npm install hexo-renderer-pug hexo-renderer-stylus –save</strong></p>
+<p><strong>到这里基本就完成了blog的基本配置了</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这里简单说一下自己的理解(不对请指出):这样做的目的是在运行时覆盖之前的_config.yml，即执行的theme改为了butterfly（或其他主题文件）了</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="网页美化"><a href="#网页美化" class="headerlink" title="网页美化"></a>网页美化</h2><p><strong>参考教程：<a target="_blank" rel="noopener" href="https://blog.csdn.net/Lott0419/article/details/106688492">https://blog.csdn.net/Lott0419/article/details/106688492</a><br>我的友链还提供了一些资源 需要的自取<br>操作文件_config.butterfly.yml（之前用来覆盖的文件）</strong></p>
+<hr>
+<p><em><strong>JS CSS修改我基本没动，有需求的按照教程自行修改即可，不需要的直接跳到目录的添加搜索，开始基本美化</strong></em></p>
+<hr>
+<h3 id="menu"><a href="#menu" class="headerlink" title="menu"></a>menu</h3><p><strong>我的大改，直接复制粘贴教程上的,local_search修改时记得安装插件</strong></p>
+<hr>
+<h3 id="背景修改"><a href="#背景修改" class="headerlink" title="背景修改"></a>背景修改</h3><p><strong>横幅背景default_top_img: 图片url<br>blog背景background: url(图片url)<br>页脚背景&#x2F;&#x2F;background: $light-blue<br>页脚自定义<br>#footer-wrap 自定义内容footer_custom_text</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">image url获取途径（我一般用这个网站获取）：[SM.MS](https://sm.ms/)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="创建导航栏页面（git-bash中操作）"><a href="#创建导航栏页面（git-bash中操作）" class="headerlink" title="创建导航栏页面（git bash中操作）"></a>创建导航栏页面（git bash中操作）</h3><p><strong>关于<br>分类<br>友情链接<br>留言板<br>标签<br>留言板<br>hexo new page以后再在source文件夹里修改即可</strong></p>
+<hr>
+<h3 id="樱花特效"><a href="#樱花特效" class="headerlink" title="樱花特效"></a>樱花特效</h3><p><strong>添加樱花特效我的电脑不可用，报告缺少版权，不过我也不太需要，先挖个坑~~~~</strong></p>
+<hr>
+<h3 id="其余设置"><a href="#其余设置" class="headerlink" title="其余设置"></a>其余设置</h3><p><strong>之后的颜色 移动端 表情等等修改我基本没动 需要的自行按照文档即可</strong></p>
+<hr>
+<h3 id="音乐播放器设置"><a href="#音乐播放器设置" class="headerlink" title="音乐播放器设置"></a>音乐播放器设置</h3><p><strong>（参考文档<a target="_blank" rel="noopener" href="https://guguge.top/blog/butterfly/#Aplayer-%E9%9F%B3%E4%B9%90%E8%AE%BE%E7%BD%AE">guguniao</a>）<br>找到inject 将aplayerinject的enable改为true<br>其余操作参考文档即可</strong></p>
+<hr>
+<h3 id="个人头像设置"><a href="#个人头像设置" class="headerlink" title="个人头像设置"></a>个人头像设置</h3><p><strong>（avater 修改img的url即可）</strong></p>
+<hr>
+<h3 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h3><p><strong>友情链接设置均在sourse&#x2F;_data&#x2F;link.yml里面（avater（url）是修改头像）</strong></p>
+<hr>
+<h3 id="打字特效"><a href="#打字特效" class="headerlink" title="打字特效"></a>打字特效</h3><p><strong>（参考教程：[moyu]<a target="_blank" rel="noopener" href="https://www.cnblogs.com/MoYu-zc/p/14395965.html%EF%BC%89">https://www.cnblogs.com/MoYu-zc/p/14395965.html）</a><br>在参考教程标题样式版块  按照教程基本没问题</strong></p>
+<hr>
+<h3 id="文章相关（新建-写）"><a href="#文章相关（新建-写）" class="headerlink" title="文章相关（新建 写）"></a>文章相关（新建 写）</h3><p><strong>(参考教程：<a target="_blank" rel="noopener" href="https://guguge.top/blog/butterfly/#%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0%E6%88%96%E7%8B%AC%E7%AB%8B%E9%A1%B5%E9%9D%A2">guguniao</a>)<br>新建文章，直接在sourse&#x2F;_post里新建md文件即可<br>front-matter(文章基本配置，复制粘贴即可)<br>写文章，在front-matter以外的区域编写内容即可，详细格式参考<a target="_blank" rel="noopener" href="https://guguge.top/blog/markdown/">markdown</a></strong></p>
+<hr>
+<h3 id="评论区设置-有点麻烦，-有时间再写写"><a href="#评论区设置-有点麻烦，-有时间再写写" class="headerlink" title="评论区设置 有点麻烦， 有时间再写写~~~"></a>评论区设置 有点麻烦， 有时间再写写~~~</h3></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/review/">review</a></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2023/04/23/UHRAGpk6omuDc93.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/07/15/headnews/"><img class="prev-cover" src="https://s2.loli.net/2023/11/04/EyviSgDotjcQe4R.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">headnews-app</div></div></a></div><div class="next-post pull-right"><a href="/2022/07/15/%E5%9F%BA%E4%BA%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E4%BA%BA%E8%84%B8%E5%8F%A3%E7%BD%A9%E8%AF%86%E5%88%AB%E6%A0%B8%E9%85%B8%E6%A3%80%E6%B5%8B%E5%A4%A7%E7%B3%BB%E7%BB%9F/"><img class="next-cover" src="https://s2.loli.net/2023/11/04/NB7YmweMoIr6KFO.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">基于机器学习的人脸口罩识别核酸检测大系统</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2023/04/23/UHRAGpk6omuDc93.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Patrick Star</div><div class="author-info__description">the first time of trying to create one blog belong to myself</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/2282318893/2282318893.github.io"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">Be a smart fool</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E5%9B%9E%E9%A1%BE%E4%B8%80%E4%B8%8Bblog%E5%88%B6%E4%BD%9C%E6%B5%81%E7%A8%8B%EF%BC%88%E7%94%B5%E8%84%91%E7%89%88%E6%9C%AC%E4%B8%BAwindows11%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">简单回顾一下blog制作流程（电脑版本为windows11）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEblog%E5%9F%BA%E6%9C%AC%E6%A1%86%E6%9E%B6"><span class="toc-number">1.1.</span> <span class="toc-text">配置blog基本框架</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%99%E6%80%81%E6%A1%86%E6%9E%B6-hexo"><span class="toc-number">1.1.1.</span> <span class="toc-text">静态框架 hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#github%E9%83%A8%E7%BD%B2"><span class="toc-number">1.1.2.</span> <span class="toc-text">github部署</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo%E7%9A%84%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE"><span class="toc-number">1.2.</span> <span class="toc-text">hexo的基本配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E9%A1%B5%E7%BE%8E%E5%8C%96"><span class="toc-number">1.3.</span> <span class="toc-text">网页美化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#menu"><span class="toc-number">1.3.1.</span> <span class="toc-text">menu</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E4%BF%AE%E6%94%B9"><span class="toc-number">1.3.2.</span> <span class="toc-text">背景修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%A1%B5%E9%9D%A2%EF%BC%88git-bash%E4%B8%AD%E6%93%8D%E4%BD%9C%EF%BC%89"><span class="toc-number">1.3.3.</span> <span class="toc-text">创建导航栏页面（git bash中操作）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%B1%E8%8A%B1%E7%89%B9%E6%95%88"><span class="toc-number">1.3.4.</span> <span class="toc-text">樱花特效</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BD%99%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.3.5.</span> <span class="toc-text">其余设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.3.6.</span> <span class="toc-text">音乐播放器设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AA%E4%BA%BA%E5%A4%B4%E5%83%8F%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.3.7.</span> <span class="toc-text">个人头像设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5"><span class="toc-number">1.3.8.</span> <span class="toc-text">友情链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%93%E5%AD%97%E7%89%B9%E6%95%88"><span class="toc-number">1.3.9.</span> <span class="toc-text">打字特效</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E7%9B%B8%E5%85%B3%EF%BC%88%E6%96%B0%E5%BB%BA-%E5%86%99%EF%BC%89"><span class="toc-number">1.3.10.</span> <span class="toc-text">文章相关（新建 写）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%84%E8%AE%BA%E5%8C%BA%E8%AE%BE%E7%BD%AE-%E6%9C%89%E7%82%B9%E9%BA%BB%E7%83%A6%EF%BC%8C-%E6%9C%89%E6%97%B6%E9%97%B4%E5%86%8D%E5%86%99%E5%86%99"><span class="toc-number">1.3.11.</span> <span class="toc-text">评论区设置 有点麻烦， 有时间再写写~~~</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/03/04/CodeDocker/" title="CodeDocker"><img src="https://s2.loli.net/2024/03/04/xPzoJwBYDVMIC5R.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CodeDocker"/></a><div class="content"><a class="title" href="/2024/03/04/CodeDocker/" title="CodeDocker">CodeDocker</a><time datetime="2024-03-04T03:05:01.000Z" title="Created 2024-03-04 11:05:01">2024-03-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/12/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%AB%98%E7%BA%A7/" title="微服务高级"><img src="https://s2.loli.net/2023/12/06/2sGwVtcrDoZvNbY.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="微服务高级"/></a><div class="content"><a class="title" href="/2023/12/06/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%AB%98%E7%BA%A7/" title="微服务高级">微服务高级</a><time datetime="2023-12-06T03:05:01.000Z" title="Created 2023-12-06 11:05:01">2023-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/11/26/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" title="微服务"><img src="https://s2.loli.net/2023/11/26/HmfcR3gwE7KWZM9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="微服务"/></a><div class="content"><a class="title" href="/2023/11/26/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" title="微服务">微服务</a><time datetime="2023-11-26T03:05:01.000Z" title="Created 2023-11-26 11:05:01">2023-11-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/11/04/java_algorithm_notebook/" title="algorithm_java_notebook"><img src="https://s2.loli.net/2023/11/04/P4lLny3zsZTjcrS.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="algorithm_java_notebook"/></a><div class="content"><a class="title" href="/2023/11/04/java_algorithm_notebook/" title="algorithm_java_notebook">algorithm_java_notebook</a><time datetime="2023-11-04T03:05:01.000Z" title="Created 2023-11-04 11:05:01">2023-11-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/07/15/headnews/" title="headnews-app"><img src="https://s2.loli.net/2023/11/04/EyviSgDotjcQe4R.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="headnews-app"/></a><div class="content"><a class="title" href="/2023/07/15/headnews/" title="headnews-app">headnews-app</a><time datetime="2023-07-15T03:05:01.000Z" title="Created 2023-07-15 11:05:01">2023-07-15</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 <i style="color:#FF6A6A;animation: announ_animation 0.8s linear infinite;" class="fa fa-heartbeat"></i> Patrick Star</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">我们都在各自的路上</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://111-2282318893.vercel.app/',
+      region: 'ap-sichuan',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://111-2282318893.vercel.app/',
+      region: 'ap-sichuan',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><div class="aplayer no-destroy" data-id="7337450393" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
